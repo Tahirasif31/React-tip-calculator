@@ -73,9 +73,10 @@ function ServiceRatingInput({ children, rating, onAddRating }) {
 
 function BillCalculator({ bill, average }) {
   return (
-    <div className="final-bill">{`Your bill is $${
-      bill + average
-    } ($${bill} + $${average})`}</div>
+    <div className="final-bill">
+      <span>{`Your total bill is $ ${bill + average}`}</span> <br />
+      <span>{`($${bill} bill + $${average} tip)`}</span>
+    </div>
   );
 }
 
