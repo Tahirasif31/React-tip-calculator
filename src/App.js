@@ -10,7 +10,8 @@ function App() {
   let average;
 
   function calculateTipAverage() {
-    average = (rating + friendRating) / 2;
+    average = (((rating + friendRating) / 2) * bill) / 100;
+
     console.log(average);
   }
 
