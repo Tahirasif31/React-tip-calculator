@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <h1>💲Tip Calculator 💵</h1>
         <BillInput bill={bill} onAddBill={setBill} />
         <ServiceRatingInput rating={rating} onAddRating={setRating}>
           How did you like the service?
